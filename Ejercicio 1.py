@@ -1,15 +1,15 @@
 print("Este es el primer método:")
 import math
 x=int (input("Ingresa a qué potencia quiere elevar euler:"))
-n = int (input("Ingresa el valor de n: "))
+y = int (input("Ingresa el valor de y: "))
 def funcion_exponencial(x):
     suma=0
     for n in range(0, 50):
-        suma += math.pow(x,n)/math.factorial(n)
+        suma += math.pow(x,y)/math.factorial(y)
     return suma
 
 print('El resultado con la función exponencial: ',funcion_exponencial(x))
-print('El resultado con la función math.exp: ',math.exp(n))
+print('El resultado con la función math.exp: ',math.exp(y))
 
 
 
@@ -45,11 +45,11 @@ print("Valor aproximado: ", aproximar_valor(x, 1))
 
 print("Tercer método")
 x=int (input("Ingresa la potencia a elevar euler:"))
-n = int (input("Ingresa el valor de n:"))
+y = int (input("Ingresa el valor de n:"))
 fact=1
 i=1
 acumulador=0
-while(i<=n):
+while(i<=y):
     fact=fact*i
     elevar = pow (x,i)
     division = elevar / fact
